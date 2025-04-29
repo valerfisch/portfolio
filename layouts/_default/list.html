@@ -1,0 +1,13 @@
+{{ define "main" }}
+{{ $image := resources.Get "images/blob.png" }}
+<div class="flex" style="align-items: center;">
+    <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" style="width: 40%; height: auto;">
+    <div style="height: fit-content; margin-bottom: 5em;">
+        {{ .Content }}
+        <div class="flex tags">
+            <a href="/about/"><div class="header-item">About</div></a>
+            <a href="/portfolio/"><div class="header-item">Portfolio</div></a>
+        </div>
+    </div>
+</div>
+{{ end }}

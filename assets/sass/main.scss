@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=M+PLUS+2:wght@100..900&display=swap');
+
+$primary: #d0a081;
+$secondary: #323029;
+$tertiary: #729a8e;
+
+$white: #ffffff;
+$light: #e1fffe;
+$dark: #031416;
+
+body {
+    width: 60vw;
+    min-height: 100vh;
+    margin: 0 auto;
+    background: $light;
+    color: $dark;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "M PLUS 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+div {
+    margin: 4px;
+}
+
+a {
+    color: unset !important;
+    text-decoration: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Bellota Text", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 8em;
+    color: $secondary;
+}
+
+p {
+    margin-left: 24px;
+    padding-bottom: 12px;
+}
+
+.flex {
+    display: flex;
+}
+
+.header {
+    justify-content: flex-start;
+
+    a {
+        .header-item {
+            padding: 8px;
+            border-radius: 8px;
+            border: 2px solid $primary;
+            color: $primary;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: 600;
+
+            &:hover {
+                background-color: $primary;
+                color: $white;
+            }
+
+            i {
+                padding: 0px 4px;
+            }
+        }
+    }
+
+}
+
+.tags {
+    margin: 0px;
+    justify-content: flex-start;
+
+    a {
+        div {
+            padding: 8px;
+            background-color: $secondary;
+            color: #ffffff;
+            border-radius: 8px;
+            font-weight: 600;
+            
+            &:hover {
+                background-color: $primary;
+                color: $dark;
+            }
+        }
+    }
+}
+
+footer {
+    padding: 2px 2px;
+    font-size: 0.7em;
+    text-align: center;
+}
