@@ -1,13 +1,18 @@
 {{ define "main" }}
+
 {{ $image := resources.Get "images/blob.png" }}
+{{ $cv := absURL "cv" }}
+{{ $awards := absURL "awards" }}
+{{ $about := absURL "about" }}
+
 <div class="flex" id=" {{ $.Title }}" style="align-items: center; flex-grow: 1;">
     <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" style="width: 40%; height: auto;">
     <div style="height: fit-content; margin-bottom: 5em;">
         {{ .Content }}
         <div class="flex tags">
-            <a href="{{ absURL '/cv/' }}"><div class="header-item">CV</div></a>
-            <a href="{{ absURL '/awards/' }}"><div class="header-item">Awards</div></a>
-            <a href="{{ absURL '/about/' }}"><div class="header-item">About</div></a>
+            <a href="{{ $cv }}"><div class="header-item">CV</div></a>
+            <a href="{{ $awards }}"><div class="header-item">Awards</div></a>
+            <a href="{{ $about }}">><div class="header-item">About</div></a>
         </div>
     </div>
 </div>
