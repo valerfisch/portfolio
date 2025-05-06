@@ -5,7 +5,7 @@ hide_footer: true
 
 # I'm Valérie
 
-![alt](/blob_about.png)
+![alt](../blob_about.png)
 
 \- a machine learning specialist and full-stack developer. With my background in software engineering, web-based 2D and 3D applications, and AI research, I’ve spent the last decade turning complex challenges into elegant digital solutions.
 
