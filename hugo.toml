@@ -1,5 +1,8 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://valerfisch.github.io/'
 languageCode = 'en-us'
 title = 'Portfolio'
 [params]
 name = 'Valérie'
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
