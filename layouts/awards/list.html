@@ -1,0 +1,20 @@
+{{ define "main" }}
+<div style="flex-grow: 1">
+  <h1>{{ .Title}}</h1>
+  {{ .Content }}
+  <div class="flex flex-col">
+    {{ range .Pages }}
+    <a class="cv-item" href="{{ .Permalink }}">
+      <h3 style="margin-top: 8px">{{ .Params.project }}</h3>
+      <div class="flex" style="align-items: start">
+        <div style="min-width: 30%; flex-shrink: 0; margin: 0px">
+          <h4 style="margin-top: 0px">{{ .Params.award }}</h4>
+          {{ .Params.year }} - <i>{{ .Params.position }}</i>
+        </div>
+        <p style="padding: 0px">{{ .Params.condensed }}</p>
+      </div>
+    </a>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

@@ -1,26 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=M+PLUS+2:wght@100..900&display=swap');
-
-$primary: #d0a081;
-$secondary: #323029;
-$tertiary: #729a8e;
+@import url("https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=M+PLUS+2:wght@100..900&display=swap");
 
 $white: #ffffff;
-$light: #e1fffe;
-$dark: #031416;
+$light: #F0EDEAff;
+$dark: #141111ff;
+
+$primary: #CA9979ff;
+$secondary: #535351ff;
+$tertiary: #AD876Eff;
+
+$screen-xs: 576px;
+$screen-sm: 768px;
+$screen-md: 992px;
+$screen-lg: 1200px;
+$screen-xl: 1400px;
 
 body {
     width: 60vw;
     min-height: 100vh;
+
     margin: 0 auto;
+
     background: $light;
     color: $dark;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+
     font-family: "M PLUS 2", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media screen and (max-width: $screen-lg) {
+        width: 95vw;
+    }
 }
 
 div {
@@ -32,28 +46,72 @@ a {
     text-decoration: none !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Bellota Text", sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Shrikhand", system-ui;
     font-weight: 400;
     font-style: normal;
+    margin-bottom: 0.25em;
+    color: $secondary;
+
 }
 
 h1 {
-    font-size: 8em;
-    color: $secondary;
+    font-size: 6em;
+    
+    text-decoration: underline 0.15em;
+    text-decoration-color: $primary;
 }
 
-p {
-    margin-left: 24px;
-    padding-bottom: 12px;
+h2 {
+    font-size: 4em;
+    
+    text-decoration: underline 0.15em;
+    text-decoration-color: $tertiary;
+}
+
+p,
+li {
+    font-size: 1.15em;
+    padding-left: 10%;
+    padding-bottom: 24px;
+    max-width: 1000px;
+    margin: 0px auto;
+}
+
+blockquote {
+    font-family: "Shrikhand", system-ui;
+    color: $secondary;
+    border: none;
+    
+    p {
+        padding-left: 24px;
+        text-decoration: underline 0.15em;
+        text-decoration-color: $tertiary;
+        max-width: 65%;
+    }
+}
+
+footer {
+    padding: 2px 2px;
+    font-size: 0.7em;
+    text-align: center;
 }
 
 .flex {
     display: flex;
 }
 
+.flex-col {
+    flex-direction: column;
+}
+
 .header {
-    justify-content: flex-start;
+    justify-content: space-between;
 
     a {
         .header-item {
@@ -65,6 +123,19 @@ p {
             text-decoration: none;
             font-weight: 600;
 
+            i {
+                font-size: 1.4em;
+            }
+
+            &.no-border {
+                border: none;
+                
+                i {
+                    padding: 2px;
+                }
+            }
+
+
             &:hover {
                 background-color: $primary;
                 color: $white;
@@ -75,11 +146,10 @@ p {
             }
         }
     }
-
 }
 
 .tags {
-    margin: 0px;
+    margin: 8px 0px;
     justify-content: flex-start;
 
     a {
@@ -89,7 +159,7 @@ p {
             color: #ffffff;
             border-radius: 8px;
             font-weight: 600;
-            
+
             &:hover {
                 background-color: $primary;
                 color: $dark;
@@ -98,8 +168,35 @@ p {
     }
 }
 
-footer {
-    padding: 2px 2px;
-    font-size: 0.7em;
-    text-align: center;
+.about-page {
+    p:has(img) {
+        height: 560px;
+        width: fit-content;
+        padding-left: 8px;
+    }
+
+    img {
+        max-height: 100%;
+    }
 }
+
+.award-page {
+    p:has(img) {
+        height: 560px;
+        width: fit-content;
+    }
+
+    img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+}
+
+.cv-item {
+    border: $primary solid 4px;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 8px 0px;
+    background-color: $light;
+}
+

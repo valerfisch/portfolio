@@ -1,9 +1,10 @@
 ---
-title: Home
+title: "Home"
 ---
 
 # "Hi!
 
-I'm Valérie, a developer with expertise in application development and a particular enthusiasm for machine learning. My journey in the tech world has been driven by curiosity about how code can solve complex problems and create intelligent systems.
+I’m a software engineer and machine learning researcher who thrives at the intersection of technical rigor and creative design. With a background spanning full-stack development, AI, and user experience, I bring an interdisciplinary approach to solving complex problems. My work is shaped by a deep curiosity, a commitment to quality, and a global perspective gained through diverse experiences in both academia and industry.
 
-One of my core beliefs is that technology should serve all people equally, which fuels my passion for building applications that are accessible, transparent, and user-friendly. I approach this work by drawing from diverse fields of research, maintaining data responsibility, and focusing on practical solutions that make a genuine difference."
+Adaptability, collaboration, and continuous learning are the cornerstones of my practice. I balance specialized expertise with broad exploration - combining analytical thinking with aesthetic sensitivity. Whether I'm building intelligent systems, designing intuitive interfaces, or exploring new domains, I aim to create solutions that are precise, impactful, and human-centered."
+
