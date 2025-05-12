@@ -9,6 +9,7 @@ condensed: Cross-platform UI/UX development, full-stack engineering, and softwar
 professional: true
 educational: false
 award: false
+parent: CV
 ---
 
 During my eight years at straightlabs, an EdTech company specializing in immersive digital learning tools, I worked as a Full-Stack Developer with a strong focus on UI/UX design and development. While I contributed across the full stack, my primary goal was always to translate complex technical features into clear, accessible, and user-friendly interfaces that enhanced learning experiences.

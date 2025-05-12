@@ -5,8 +5,8 @@
 {{ $awards := absURL "awards" }}
 {{ $about := absURL "about" }}
 
-<div class="flex" id=" {{ $.Title }}" style="align-items: center; flex-grow: 1;">
-    <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" style="width: 40%; height: auto;">
+<div class="flex flex-col-sm" id=" {{ $.Title }}" style="align-items: center; flex-grow: 1;">
+    <img class="profile-pic" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}">
     <div style="height: fit-content; margin-bottom: 5em;">
         {{ .Content }}
         <div class="flex tags">

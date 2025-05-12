@@ -9,6 +9,7 @@ condensed: "Completing my M.Sc. in Informatics at TUM with a focus on machine le
 professional: false
 educational: true
 award: false
+parent: CV
 ---
 
 I’m currently completing my M.Sc. in Informatics at the Technical University of Munich (TUM), with a focus on Machine Learning, Data Analysis, Computer Graphics, and Computer Vision. The program deepens my understanding of intelligent systems and data-driven technologies, combining rigorous theoretical coursework with hands-on research and applied projects.

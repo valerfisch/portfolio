@@ -9,6 +9,7 @@ condensed: "Earned my B.Sc. in Informatics from TUM, where I built a strong foun
 professional: false
 educational: true
 award: false
+parent: CV
 ---
 
 I earned my B.Sc. in Informatics from the Technical University of Munich (TUM), one of Europe’s top technical universities. The program provided a rigorous foundation in computer science and mathematics, covering key areas such as algorithms, data structures, operating systems, databases, and software architecture. Mathematically, it trained me in linear algebra, discrete mathematics, calculus, and probability — all essential for understanding computational complexity, graphics pipelines, and later, machine learning.

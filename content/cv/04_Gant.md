@@ -9,6 +9,7 @@ condensed: Focused on customer communication, consultation, and satisfaction, en
 professional: true
 educational: false
 award: false
+parent: CV
 ---
 
 At GANT, I was responsible for selling clothing and assisting customers on the sales floor. My focus was on providing friendly, attentive service to ensure a positive shopping experience and build customer loyalty. This included answering questions, offering styling advice, and maintaining a clean, organized retail space—all with an emphasis on customer satisfaction and brand representation.

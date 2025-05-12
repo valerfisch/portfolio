@@ -9,6 +9,7 @@ condensed: Provided end-to-end IT support, including hardware acquisition, tailo
 professional: true
 educational: false
 award: false
+parent: CV
 ---
 
 At Frisch & Veg, a gastronomy business, I provided long-term IT consulting and technical support tailored to the needs of a growing small enterprise. My work spanned from hardware acquisition and setup to the development of custom social media strategies that reflected the brand’s identity and outreach goals. I implemented software-supported process optimizations to streamline daily operations and increase efficiency. Additionally, I consulted for e-commerce solutions and offered web hosting, helping the business build a stable and effective digital presence.

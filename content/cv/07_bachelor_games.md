@@ -9,6 +9,7 @@ condensed: "Studied Games Engineering at TUM, where I gained foundational expert
 professional: false
 educational: true
 award: false
+parent: CV
 ---
 
 During my studies in Games Engineering at TUM, I developed a deep technical understanding of 3D objects and interactive environments. The program combined core computer science with specialized courses in 3D graphics, game physics, and real-time rendering - providing hands-on experience with how digital objects are represented, manipulated, and rendered in virtual space.

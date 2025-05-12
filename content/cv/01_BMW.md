@@ -9,6 +9,7 @@ condensed: Software architecture and data analysis, with a focus on R&D for deep
 professional: true
 educational: false
 award: false
+parent: CV
 ---
 
 At BMW Group, I conducted my Master's thesis at the research and innovation center, focusing on the application of AI-based surrogate modeling for simulating auxiliary spring behavior - a novel approach in vehicle dynamics simulation.

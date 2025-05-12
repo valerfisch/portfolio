@@ -1,6 +1,18 @@
 {{ define "main" }}
-<h3>{{ .Params.position }}</h3>
-<p style="margin: 0px; font-style: italic; padding: 0px;">{{ .Params.year }}</p>
-<p style="margin: 0px; font-weight: bold; padding: 0px; margin-bottom: 16px; text-decoration: underline;"><a href="{{ .Params.link }}">> {{ .Params.award }}</a></p>
-<div class="award-page" style="flex-grow: 1">{{ .Content }}</div>
+
+{{ $smallCaps := strings.ToLower .Params.parent }}
+{{$parent := absURL $smallCaps }}
+
+
+<div class="content-page">
+    <h3>{{ .Params.position }}</h3>
+    <p style="margin: 0px; font-style: italic; padding: 0px;">{{ .Params.year }}</p>
+    <p style="margin: 0px; font-weight: bold; padding: 0px; margin: 16px 0px;">
+        <a class="company-tag" href="{{ .Params.link }}"> {{ .Params.award }}</a>
+    </p>
+    <div class="award-page" style="flex-grow: 1">{{ .Content }}</div>
+    <div style="font-weight: bold; padding: 0px; margin: 16px auto; width: fit-content;">
+        <a class="back-button" href="{{ $parent }}"> Back to {{.Params.parent}}</a>
+    </div>
+</div>
 {{ end }}

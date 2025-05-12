@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=M+PLUS+2:wght@100..900&display=swap");
 
 $white: #ffffff;
-$light: #F0EDEAff;
+$light: #f0edeaff;
 $dark: #141111ff;
 
-$primary: #CA9979ff;
+$primary: #ca9979ff;
 $secondary: #535351ff;
-$tertiary: #AD876Eff;
+$tertiary: #ad876eff;
 
 $screen-xs: 576px;
 $screen-sm: 768px;
@@ -27,12 +27,18 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    hyphens: auto;
+
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
     @media screen and (max-width: $screen-lg) {
+        width: 66vw;
+    }
+    
+    @media screen and (max-width: $screen-md)  {
         width: 95vw;
     }
 }
@@ -57,21 +63,36 @@ h6 {
     font-style: normal;
     margin-bottom: 0.25em;
     color: $secondary;
-
 }
 
 h1 {
     font-size: 6em;
-    
+
     text-decoration: underline 0.15em;
     text-decoration-color: $primary;
+
+    @media screen and (max-width: $screen-lg) {
+        font-size: 4em;
+        margin-bottom: 0.4em;
+        text-underline-offset: 2px;
+        text-decoration: underline 0.3em;
+        text-decoration-color: $primary;
+    }
 }
 
 h2 {
     font-size: 4em;
-    
+
     text-decoration: underline 0.15em;
     text-decoration-color: $tertiary;
+
+    @media screen and (max-width: $screen-lg) {
+        font-size: 3em;
+        margin-bottom: 0.4em;
+        text-underline-offset: 2px;
+        text-decoration: underline 0.25em;
+        text-decoration-color: $tertiary;hyphens: auto;
+    }
 }
 
 p,
@@ -87,12 +108,16 @@ blockquote {
     font-family: "Shrikhand", system-ui;
     color: $secondary;
     border: none;
-    
+
     p {
         padding-left: 24px;
         text-decoration: underline 0.15em;
         text-decoration-color: $tertiary;
         max-width: 65%;
+
+        @media screen and (max-width: $screen-lg) {
+            max-width: 100%;
+        }
     }
 }
 
@@ -112,12 +137,13 @@ footer {
 
 .header {
     justify-content: space-between;
-
+    
     a {
         .header-item {
             padding: 8px;
             border-radius: 8px;
             border: 2px solid $primary;
+            background-color: $light;
             color: $primary;
             cursor: pointer;
             text-decoration: none;
@@ -129,12 +155,11 @@ footer {
 
             &.no-border {
                 border: none;
-                
+
                 i {
                     padding: 2px;
                 }
             }
-
 
             &:hover {
                 background-color: $primary;
@@ -145,6 +170,18 @@ footer {
                 padding: 0px 4px;
             }
         }
+    }
+}
+
+.flex-col-sm {
+    @media screen and (max-width: $screen-lg) {
+        flex-direction: column;
+    }
+}
+
+.padding-top-sm {
+    @media screen and (max-width: $screen-lg) {
+        padding-top: 12px !important;
     }
 }
 
@@ -168,21 +205,43 @@ footer {
     }
 }
 
+.company-tag {
+    padding: 8px;
+    border-radius: 8px;
+    border: 2px solid $tertiary;
+    color: $tertiary !important;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+
+    &:hover {
+        background-color: $tertiary;
+        color: $white !important;
+    }
+}
+
+.profile-pic {
+    width: 40%;
+    height: auto;
+
+    @media screen and (max-width: $screen-lg) {
+        width: 100%;
+    }
+}
+
 .about-page {
     p:has(img) {
-        height: 560px;
-        width: fit-content;
-        padding-left: 8px;
+        width: 70%;
     }
 
     img {
         max-height: 100%;
+        max-width: 100%;
     }
 }
 
 .award-page {
     p:has(img) {
-        height: 560px;
         width: fit-content;
     }
 
@@ -200,3 +259,46 @@ footer {
     background-color: $light;
 }
 
+.more-button-wrapper {
+    margin: 8px 0px 0px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.more-button {
+    padding: 8px;
+    border-radius: 8px;
+    border: 2px solid $primary;
+    color: $primary !important;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+
+    &:hover {
+        background-color: $primary;
+        color: $white !important;
+    }
+}
+
+.back-button {
+    padding: 8px;
+    background-color: $secondary;
+    color: #ffffff !important;
+    border-radius: 8px;
+    font-weight: 600;
+
+    &:hover {
+        background-color: $primary;
+        color: $dark;
+    }
+}
+
+.content-page {
+    .catch_phrase {
+        font-size: 2em;
+    }
+
+    .position {
+        font-size: 1.5em;
+    }
+}

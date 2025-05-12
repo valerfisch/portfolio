@@ -5,29 +5,43 @@
   <div class="flex flex-col">
     <h2>Work Experience</h2>
     {{ range .Pages }} {{ if .Params.professional }}
-    <a class="cv-item" href="{{ .Permalink }}">
+    <div class="cv-item">
       <h3 style="margin-top: 8px">{{ .Params.position }}</h3>
-      <div class="flex" style="align-items: start">
+
+      <div class="flex flex-col-sm" style="align-items: start">
         <div style="min-width: 30%; flex-shrink: 0; margin: 0px">
           <h4 style="margin-top: 0px">{{ .Params.company }}</h4>
           {{ .Params.start_date }} - {{ .Params.end_date }}
         </div>
-        <p style="padding: 0px">{{ .Params.condensed }}</p>
+        <p class="padding-top-sm" style="padding: 0px">
+          {{ .Params.condensed }}
+        </p>
       </div>
-    </a>
+      <div class="more-button-wrapper">
+        <a class="more-button" href="{{ .Permalink }}">more details</a>
+      </div>
+    </div>
+
     {{ end }} {{ end }}
     <h2>Education</h2>
     {{ range .Pages }} {{ if .Params.educational }}
-    <a class="cv-item" href="{{ .Permalink }}">
+    <div class="cv-item">
       <h3 style="margin-top: 8px">{{ .Params.position }}</h3>
-      <div class="flex" style="align-items: start">
+
+      <div class="flex flex-col-sm" style="align-items: start">
         <div style="min-width: 30%; flex-shrink: 0; margin: 0px">
           <h4 style="margin-top: 0px">{{ .Params.company }}</h4>
           {{ .Params.start_date }} - {{ .Params.end_date }}
         </div>
-        <p style="padding: 0px">{{ .Params.condensed }}</p>
+        <p class="padding-top-sm" style="padding: 0px">
+          {{ .Params.condensed }}
+        </p>
       </div>
-    </a>
+      <div class="more-button-wrapper">
+        <a class="more-button" href="{{ .Permalink }}">more details</a>
+      </div>
+      </div>
+    </div>
     {{ end }} {{ end }}
   </div>
 </div>

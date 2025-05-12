@@ -4,7 +4,8 @@ project: Allianz Virtuelle Lernwelt
 year: 2020
 link: https://www.elearning-journal.com/2020/02/kategorie-personal-learning-environment/
 condensed: Cloud-based mobile learning platform for Allianz, upskilling 3,000+ employees with personalized, gamified content and real-time analytics. 
-position: full-stack developer
+position: Full-stack Developer
+parent: Awards
 ---
 
 ![](https://www.elearning-journal.com/wp-content/uploads/2020/02/straightlabs1-1068x808.jpg)
