@@ -2,4 +2,4 @@
 title: Curriculum Vitae
 ---
 
-Creative and technically versatile developer with 8+ years of experience in full-stack development, specializing in cross-platform UI/UX design for interactive and award-winning enterprise applications. Strong background in machine learning, 3D graphics, and data-driven development, with hands-on experience in both industry-grade software deployment and academic research. Proven ability to bridge design and engineering with a deep understanding of user experience, software architecture, and scalable systems.
+Senior Full-Stack Developer and ML Engineer with 8+ years of experience building enterprise applications (2x Red Dot Design Award, eLearning Award). M.Sc. from TUM with specialization in machine learning and computer vision. I've worked across the full stack, from 3D web platforms to AI surrogate models at BMW Group.

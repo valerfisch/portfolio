@@ -10,7 +10,14 @@
   <p style="margin: 0px; font-weight: bold; padding: 0px; margin: 16px 0px">
     <a class="company-tag" href="{{ .Params.link }}"> {{ .Params.company }}</a>
   </p>
-  <div class="" style="flex-grow: 1">{{ .Content }}</div>
+  {{ with .Params.tags }}
+  <div class="project-tags">
+    {{ range . }}
+    <span class="project-tag">{{ . }}</span>
+    {{ end }}
+  </div>
+  {{ end }}
+  <div class="award-page" style="flex-grow: 1">{{ .Content }}</div>
   <div
     style="
       font-weight: bold;

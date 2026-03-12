@@ -1,5 +1,6 @@
 {{ $cv := absURL "cv" }}
 {{ $awards := absURL "awards" }}
+{{ $projects := absURL "projects" }}
 {{ $about := absURL "about" }}
 
 <div class="flex header">
@@ -7,6 +8,7 @@
         <a href="{{.Site.BaseURL}}"><div class="header-item no-border"><i class="glyphicon glyphicon-home"></i></div></a>
         <a href="{{$cv}}"><div class="header-item">CV</div></a>
         <a href="{{ $awards}}"><div class="header-item">Awards</div></a>
+        <a href="{{ $projects}}"><div class="header-item">Projects</div></a>
     </div>
     <div class="flex">
         <a href="{{ $about }}"><div class="header-item">About</div></a>

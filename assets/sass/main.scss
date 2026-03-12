@@ -4,9 +4,9 @@ $white: #ffffff;
 $light: #f0edeaff;
 $dark: #141111ff;
 
-$primary: #ca9979ff;
+$primary: #004d40;
 $secondary: #535351ff;
-$tertiary: #ad876eff;
+$tertiary: #00695c;
 
 $screen-xs: 576px;
 $screen-sm: 768px;
@@ -16,6 +16,7 @@ $screen-xl: 1400px;
 
 body {
     width: 60vw;
+    max-width: 900px;
     min-height: 100vh;
 
     margin: 0 auto;
@@ -35,11 +36,15 @@ body {
     justify-content: space-between;
 
     @media screen and (max-width: $screen-lg) {
-        width: 66vw;
+        width: 75vw;
     }
-    
-    @media screen and (max-width: $screen-md)  {
-        width: 95vw;
+
+    @media screen and (max-width: $screen-md) {
+        width: 85vw;
+    }
+
+    @media screen and (max-width: $screen-sm) {
+        width: 92vw;
     }
 }
 
@@ -95,11 +100,21 @@ h2 {
     }
 }
 
-p,
-li {
+p {
     font-size: 1.15em;
     padding-left: 10%;
     padding-bottom: 24px;
+    max-width: 1000px;
+    margin: 0px auto;
+}
+
+ul, ol {
+    padding-left: calc(10% + 1.2em);
+}
+
+li {
+    font-size: 1.15em;
+    padding-bottom: 4px;
     max-width: 1000px;
     margin: 0px auto;
 }
@@ -199,7 +214,7 @@ footer {
 
             &:hover {
                 background-color: $primary;
-                color: $dark;
+                color: $white;
             }
         }
     }
@@ -224,7 +239,7 @@ footer {
     width: 40%;
     height: auto;
 
-    @media screen and (max-width: $screen-lg) {
+    @media screen and (max-width: $screen-sm) {
         width: 100%;
     }
 }
@@ -289,7 +304,7 @@ footer {
 
     &:hover {
         background-color: $primary;
-        color: $dark;
+        color: $white !important;
     }
 }
 
@@ -300,5 +315,51 @@ footer {
 
     .position {
         font-size: 1.5em;
+    }
+}
+
+.projects-section {
+    margin-bottom: 2em;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 8px 4px;
+}
+
+.project-tag {
+    padding: 4px 10px;
+    border-radius: 4px;
+    background-color: $secondary;
+    color: $white;
+    font-size: 0.85em;
+    font-weight: 500;
+}
+
+.contact-section {
+    margin-bottom: 2em;
+
+    p {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+}
+
+.contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    border: 2px solid $primary;
+    border-radius: 8px;
+    color: $primary !important;
+    font-weight: 600;
+
+    &:hover {
+        background-color: $primary;
+        color: $white !important;
     }
 }
